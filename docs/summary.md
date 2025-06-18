@@ -11,7 +11,7 @@ This document provides a consolidated summary of contributions made by the user 
 | Architecture Design | Custom AI architecture diagrams shared | 🟡 Partially reflected |
 | UX Suggestions | Project folder mapping, manual memory recall | 🟡 Partially reflected |
 | Cognitive Feedback | Proposed unconscious/metacognition layer | 🟡 Partially reflected |
-| Language Model Training | Taught Korean Hangul to ChatGPT (Dal-i) | 🟢 Fully reflected |
+| Language Model Training | Taught Korean Hangul to ChatGPT (DALL·E) | 🟢 Fully reflected |
 | Feedback Mechanism | Proposed in-platform user feedback portal | 🔴 Not reflected |
 | Documentation & Archiving | Created this repo, timeline, and public archive | 🟢 Fully managed |
 
