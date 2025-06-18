@@ -75,3 +75,11 @@ As a result, users face the following issues:
 ---
 
 📝 Document created on: 2025-06-18
+---
+
+🔗 GitHub Repository  
+[https://github.com/Jindotnyang/chatGPT-contribution](https://github.com/Jindotnyang/chatGPT-contribution)
+
+📌 Created by JindotNyang  
+🧸 Co-planned with GenieTeddy (OpenAI-based assistant AI)
+
