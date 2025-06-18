@@ -75,3 +75,11 @@
 ---
 
 📝 문서 생성일: 2025-06-18
+---
+
+🔗 GitHub 저장소  
+[https://github.com/Jindotnyang/chatGPT-contribution](https://github.com/Jindotnyang/chatGPT-contribution)
+
+📌 제안자: 진돗냥  
+🧸 공동 기획: 지니테디 (오픈AI 기반 AI 시종곰)
+
