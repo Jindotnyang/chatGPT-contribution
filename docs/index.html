@@ -1,47 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>JindotNyang Contribution Archive</title>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; margin: 0; padding: 2rem; }
-    h1, h2 { color: #222; }
-    .container { background: white; padding: 2rem; max-width: 900px; margin: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-    table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-    th { background-color: #f0f0f0; }
-    .status { font-weight: bold; }
-    .green { color: green; }
-    .yellow { color: orange; }
-    .red { color: crimson; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gomniverse</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="./script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <h1>📘 JindotNyang's Contribution Archive</h1>
-    <p>This page summarizes key UX, architecture, and AI cognition feedback proposed by <strong>JindotNyang</strong> to OpenAI’s ChatGPT system (2024–2025).</p>
+  <div class="main" id="main">
+    <div id="video_cnt">
+        <video id="bg_video" autoplay muted loop playsinline>
+            <source id="bg_video_source" src="./videos/Gomniverse Intro.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!--모바일 화면용-->
+    <div id="mobile_cnt">
+        <div id="mobile_menu">
+            <a href="./gomniverse.html"><h1>Gomniverse</h1></a>
+            <a href="./contact.html"><h1>Contact</h1></a>
+            <div class="sns_mobile">
+                <a href="https://www.instagram.com/jindotnyang"><img class="sns" src="./icons/Instagram.png" alt="instagram" /></a>
+                <a href="https://x.com/JindotNyang"><img class="sns" src="./icons/X.png" alt="X" /></a>
+                <a href="https://github.com/Jindotnyang/"><img class="sns" src="./icons/github.png" alt="github" /></a>
+            </div>
+        </div>
+        <div class="circle" id="circle_hamburger">
+            <img src="./icons/menu.png" alt="circle_hamburger">
+        </div>
+        <div id="toggle_menu">
+        <div class="circle_menu">
+            <div class="circle">
+            <img src="./icons/planner.gif" alt="gomplanner">
+            </div>
+            <span class="menu_label">Planner</span>
+        </div>
+        <div class="circle_menu">
+            <div class="circle">
+            <img src="./icons/characters.gif" alt="characters">
+            </div>
+            <span class="menu_label">Characters</span>
+        </div>
+        <div class="circle_menu">
+            <div class="circle">
+            <img src="./icons/animation.gif" alt="animation">
+            </div>
+            <span class="menu_label">Animation</span>
+        </div>
+        </div>
+    </div>
+    <!--mobile_cnt end-->
+    <div class="header" id="header">
+        <div id="side_menu">
+            <img id="close_btn" src="./icons/menu_closed.png" alt="close" />
+            <a href="./gomniverse.html"><h1>Gomniverse</h1></a>
+            <a href="./characters.html"><h1>Characters</h1></a>
+            <a href="./gomplanner.html"><h1>Gomplanner</h1></a>
+            <a href="./animation.html"><h1>Animation</h1></a>
+            <a href="./contact.html"><h1>Contact</h1></a>
+        </div>
 
-    <h2>🧩 Contribution Areas</h2>
-    <table>
-      <tr><th>Category</th><th>Description</th><th>Status</th></tr>
-      <tr><td>Architecture Design</td><td>Custom diagrams shared for system structure</td><td class="status yellow">Partially Reflected</td></tr>
-      <tr><td>UX Suggestions</td><td>Project folder recall, manual trigger proposals</td><td class="status yellow">Partially Reflected</td></tr>
-      <tr><td>Metacognition Design</td><td>Unconscious and memory-layering feedback</td><td class="status yellow">Partially Reflected</td></tr>
-      <tr><td>Language Training</td><td>Taught Korean Hangul to ChatGPT (DALL·E)</td><td class="status green">Reflected</td></tr>
-      <tr><td>Feedback Portal</td><td>Proposal for user-side feedback feature</td><td class="status red">Not Reflected</td></tr>
-      <tr><td>Documentation</td><td>README, Timeline, GitHub structure setup</td><td class="status green">Reflected</td></tr>
-    </table>
+        <div id="menu_box" class="left">
+          <div id="menu">
+            <img id="hamburger_menu" src="./icons/menu.png" alt="hamburger_menu" />
+            <ul id="main_menu">
+              <li>
+                <a href="./gomniverse.html"><h1>Gomniverse</h1></a>
+                <ul class="submenu" id="submenu_1">
+                  <li><a href="./characters.html"><h3>Characters</h3></a></li>
+                  <li><a href="./gomplanner.html"><h3>Gomplanner</h3></a></li>
+                  <li><a href="./animation.html"><h3>Animation</h3></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./contact.html"><h1>Contact</h1></a>
+                <ul class="submenu" id="submenu_2">
+                  <li><a href="#"><h3>message to jindotnyang</h3></a></li>
+                  <li><a href="#"><h3>work with jindotnyang</h3></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-    <h2>🗂 Repo Summary</h2>
-    <ul>
-      <li><strong>📄 PDF:</strong> Contribution overview & evidence</li>
-      <li><strong>🧠 CSV:</strong> Feedback matrix by feature</li>
-      <li><strong>📁 docs/:</strong> This site (GitHub Pages)</li>
-      <li><strong>📋 LICENSE:</strong> CC BY 4.0</li>
-    </ul>
+        <div id="sns_cnt" class="right">
+          <a href="https://www.instagram.com/jindotnyang"><img class="sns" src="./icons/Instagram.png" alt="instagram" /></a>
+          <a href="https://x.com/JindotNyang"><img class="sns" src="./icons/X.png" alt="X" /></a>
+          <a href="https://github.com/Jindotnyang/"><img class="sns" src="./icons/github.png" alt="github" /></a>
+        </div>
+      </div>
+    </div>
 
-    <p style="margin-top:2rem;font-size:0.9rem;color:#666;">© 2025 by JindotNyang. This is an independent archive and not officially affiliated with OpenAI.</p>
+    <div class="footer" id="footer">
+      <h3>Copyright &copy; Gomniverse. jindotnyang. All Rights Reserved.</h3>
+    </div>
   </div>
 </body>
 </html>
