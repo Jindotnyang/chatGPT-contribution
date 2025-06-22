@@ -11,6 +11,7 @@ window.addEventListener('load', () => {
     sideMenu.classList.remove('open');
   });
 
+function setResponsiveVideo() {
   const videoCnt = document.getElementById('video_cnt');
   const isMobile = window.innerWidth <= 768;
 
@@ -23,6 +24,11 @@ window.addEventListener('load', () => {
       <source src="${videoPath}" type="video/mp4">
     </video>
   `;
+}
+
+document.addEventListener('DOMContentLoaded', setResponsiveVideo);
+window.addEventListener('resize', setResponsiveVideo);
+
 });
 
 document.addEventListener("DOMContentLoaded", () => {
