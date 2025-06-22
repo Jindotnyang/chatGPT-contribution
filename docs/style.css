@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'Paperlogy-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#video_cnt video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#header {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between; /* 좌우 정렬 */
+  align-items: center;
+  padding: 20px 40px; /* 여백 조정 */
+  z-index: 2;
+}
+
+#side_menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(30, 30, 30, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none; /* 클릭 비활성화 */
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10;
+}
+
+#side_menu.open {
+  opacity: 1;
+  pointer-events: all; /* 클릭 활성화 */
+}
+
+#side_menu img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+#side_menu a {
+  color: #EBD6FB;
+  font-family: 'Paperlogy-8ExtraBold';
+  font-size: large;
+  margin-bottom: 30px;
+}
+
+#menu {
+  display: flex;
+  align-items: center;
+  font-family: 'Paperlogy-8ExtraBold';
+}
+
+#hamburger_menu {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+#main_menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main_menu li {
+  margin: 0 40px;
+}
+
+.submenu {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #687FE5;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 17px;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding: 20px 40px;
+}
+
+#sns_cnt {
+  display: flex;
+  gap: 10px;
+}
+
+.sns {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.footer {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Paperlogy-8ExtraBold';
+  color: #687FE5;
+  z-index: 2;
+}
+
+/* 기본값: PC에서는 mobile_cnt 안 보이게 */
+#mobile_cnt {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+#mobile_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mobile_menu > a {
+    font-family: 'Paperlogy-8ExtraBold';
+    margin-bottom: 0;
+}
+
+#mobile_menu > a:first-child {
+  margin-top: 20px;
+}
+
+#circle_hamburger {
+  margin-top: 310px;
+}
+
+#toggle_menu {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px); /* 처음엔 아래에 있음 */
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 99;
+  pointer-events: none; /* 클릭 방지 */
+  font-family: 'Paperlogy-8ExtraBold';
+  color: #687FE5;
+}
+
+#toggle_menu.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto; /* 클릭 가능하게 */
+}
+
+.circle_menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.circle {
+  width: 80px;              /* 가로 */
+  height: 80px;             /* 세로 */
+  border-radius: 50%;       /* 동그라미 핵심 */
+  background-color: rgb(252,216,205, 0.5); /* 원하는 배경색 */
+  display: flex;            /* 안의 이미지 정중앙 정렬용 */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 살짝 입체감 */
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  margin: 5px auto;        /* 위아래 간격 + 가운데 정렬 */
+}
+
+.circle:hover {
+  transform: scale(1.1);    /* 살짝 커지는 효과 */
+  background-color: rgb(254,235,246);
+}
+
+.circle > img {
+  width: 56px;
+  height: 56px;
+}
+
+.circle > #animation > img {
+  width: 50px;
+  height: 50px;
+}
+
+.circle.toggle-btn.rotate {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile_cnt {
+    display: block;
+    position: absolute;      /* 추가 */
+    top: 0;
+    left: 0;
+    z-index: 999;            /* header보다 높게 */
+  }
+  .sns {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  }
+  #header {
+    display: none;           /* 또는 아예 안 보이게 */
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
