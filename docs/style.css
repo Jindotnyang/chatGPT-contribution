@@ -62,14 +62,14 @@ body {
 #side_menu img {
   width: 100px;
   height: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   cursor: pointer;
 }
 
 #side_menu a {
   color: #EBD6FB;
   font-family: 'Paperlogy-8ExtraBold';
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #menu {
