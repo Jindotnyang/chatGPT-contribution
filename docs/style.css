@@ -127,17 +127,6 @@ a {
   cursor: pointer;
 }
 
-.footer {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 100vw;
-  text-align: center;
-  font-family: 'Paperlogy-8ExtraBold';
-  color: #687FE5;
-  z-index: 2;
-}
-
 /* 기본값: PC에서는 mobile_cnt 안 보이게 */
 #mobile_cnt {
   width: 100vw;
@@ -241,9 +230,5 @@ a {
   }
   #header {
     display: none;           /* 또는 아예 안 보이게 */
-  }
-
-  .footer {
-    display: none;
   }
 }
